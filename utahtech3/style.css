@@ -3,29 +3,68 @@ body {
     margin:0;
     color:#666666;
     background-color: #FFFFFF;
-    Font-family: Arial,Verdana,Sans-serif;
+    font-family: Arial,Verdana,Sans-serif;
+    background-attachment:fixed;
 }
 header {
-    grid-row: 1 / 2;
-    grid-column: 2 / -2;
+    grid-area:1/2/2/8;
+    background-color: #003058;
+    color: #FFFFFF;
+    Font-family: Georgia,serif;
 }
 header h1 {
+    background-image:url(utahlogo.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    padding: left 1em;
+    background-origin:content-box;
+    margin:0;
     line-height:140%;
     padding: 0.5rem;
-    margin:0;
+}
+header a{
+    text-decoration:none;
+    color:#FFFFFF;
+}
+main{
+    grid-area:4/2/5/8;
+    background-color:#FFFFFF;
+    padding-left:2rem;
+    padding-right:2rem;
 }
 nav{
-    grid-row: 2 / 3;
-    grid-column: 2 / -2;
+    grid-area:2/2/3/8;
+    font-weight: bold;
     background-color: #424242;
-    position: sticky;
-    top: 0;
-    padding: 0;
-    margin: 0;
+    position:sticky;
+    top:0;
+    }
+nav ul{
+    margin:0;
+    padding:0px;
+    display:flex;
+    flex-flow:row nowrap;
+    list-style-type:none;
+}
+nav ul li{
+    width:100%;
+}
+nav a{  text-decoration: none; 
+    color:#FFFFFF;
+    padding:1rem 0rem;
+    display:block;
+    text-align:center;
+
+}
+nav a:hover{
+    background-color:#BA1C21
 }
 h2 {
     color:#424242;
     font-family: Georgia,serif;
+}
+h3{
+    color:#003058;
 }
 dt{
     color: #003058;
@@ -36,50 +75,45 @@ dt{
     font-weight:bold;
 }
 footer{
-    grid-row: 5 / 6;
-    grid-column: 2 / -2;
+    grid-area:5/2/6/8;
+    font-size:.70rem;
+    text-align:center;
+    font-style:italic;
+    padding:1rem;
+
+}
+main img{
+    float:right;
+    padding-left:2rem;
 }
 #wrapper{
-    display:grid;
-    grid-auto-rows: minimax(0px,auto);
-    grid-template-columns:minimax(0px, 1fr)repeat(6, minimax(0, 175px) ) minimax(0px, 1fr);
+   display:grid;
+   grid-auto-rows:minmax(0px, auto);
+   grid-template-columns:minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
 }
-*{
-    box-sizing: border-box;
-    }
-
-main img {
-    float: right;
-    padding-left: 2rem;
+#homehero{
+    grid-area:3/2/4/8;
+    height:300px;
+    background-image:url(utahtechimages/homehero.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:center;
 }
-#homehero, #studenthero, #facultyhero {
-    grid-row: 3 / 4;
-    grid-column: 2 / -2;
+#studenthero{
+    grid-area:3/2/4/8;
+    height:300px;
+    background-image:url(utahtechimages/studenthero.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:center;
 }
-main {
-    grid-row: 4 / 5;
-    grid-column: 2 / -2;
-    background: #ffffff;
+#facultyhero{
+    grid-area:3/2/4/8;
+    height:300px;
+    background-image:url(utahtechimages/facultyhero.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:center;
 }
-nav ul {
-    margin: 0px;
-    padding: 0px;
-    display: flex;
-    flex-flow: row nowrap;
-    list-style-type: none;
-}
-
-nav ul li {
-    width: 100%;
-}
-
-nav a {
-    color: #FFFFFF;
-    padding: 1rem 0rem;
-    display: block;
-    text-align: center;
-}
-
-nav a:hover {
-    background-color: #BA1C21;
-}
+*{ 
+box-sizing: border-box; }
