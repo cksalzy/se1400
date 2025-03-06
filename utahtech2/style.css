@@ -2,7 +2,8 @@
 body {
     color:#666666;
     background-color: #FFFFFF;
-    Font-family: Arial,Verdana,Sans-serif;
+    font-family: Arial,Verdana,Sans-serif;
+    background-attachment:fixed;
 }
 header {
     background-color: #003058;
@@ -10,16 +11,32 @@ header {
     Font-family: Georgia,serif;
 }
 header h1 {
+    background-image:url(utahlogo.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    padding: left 1em;
+    background-origin:content-box;
+    margin-bottom:0;
     line-height:140%;
     padding: 0.5rem;
+}
+main{
+    padding-left:2rem;
+    padding-right:2rem;
 }
 nav{
     font-weight: bold;
     background-color: #F3F3F3;
+    padding:0.5rem 0.5rem 0.5rem 2rem;
+    }
+nav a{  text-decoration: none; 
 }
 h2 {
     color:#424242;
     font-family: Georgia,serif;
+}
+h3{
+    color:#003058;
 }
 dt{
     color: #003058;
@@ -33,11 +50,17 @@ footer{
     font-size:.70rem;
     text-align:center;
     font-style:italic;
+    padding:1rem;
+
 }
 #wrapper{
     width: 80%;
     margin-right:auto;
     margin-left: auto;
+    background-color:#FFFFFF;
+    min-width:960px;
+    max-width:2048px;
+    box-shadow: 0px 3px 3px rgba(66,66,66,0.3);
 }
 #homehero{
     height:300px;
