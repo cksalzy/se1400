@@ -1,3 +1,9 @@
-display:grid;
-grid-template-columns:minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
+#wrapper {
+    display:grid;
+grid-template-columns:minmax(0px, 1fr) repeat(3, minmax(0, 175px)) minmax(0px, 1fr);
 grid-area:rgba (255,255,255,0.3);
+grid-auto-rows:minmax(0px, auto);}
+nav{
+    grid-area:1/2/2/-2;
+    background-color: #424242;
+}
