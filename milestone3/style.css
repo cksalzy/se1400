@@ -7,3 +7,6 @@ nav{
     grid-area:1/2/2/-2;
     background-color: #424242;
 }
+main{
+    grid-area:2/-2/4/-2;
+}
