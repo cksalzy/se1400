@@ -7,28 +7,28 @@ body{
 .grid-item1{
     grid-column-start:1;
     grid-row-start:2;
-    grid-column-end:3;
+    grid-column-end:1;
     grid-row-end:4;
     background:navy;
 }
 .grid-item2{
-    grid-column-start:4;
+    grid-column-start:1;
     grid-row-start:5;
-    grid-column-end:5;
+    grid-column-end:1;
     grid-row-end:6;
     background:cyan;
 }
 .grid-item3{
-    grid-column-start:6;
+    grid-column-start:1;
     grid-row-start:7;
-    grid-column-end:7;
+    grid-column-end:1;
     grid-row-end:8;
     background:greenyellow;
 }
 .grid-item4{
-    grid-column-start:8;
+    grid-column-start:1;
     grid-row-start:9;
-    grid-column-end:10;
+    grid-column-end:1;
     grid-row-end:11;
     background:green;
 }
