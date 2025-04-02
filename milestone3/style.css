@@ -2,7 +2,6 @@ body{
     display: grid; 
     grid-template-columns: repeat(9,1fr);
     grid-template-rows: repeat(10,200px);
-    background-attachment:fixed;
 }
 
 .grid-item1{
