@@ -1,17 +1,14 @@
-#wrapper {
-    display:grid;
-grid-template-columns:minmax(0px, 1fr) repeat(3, minmax(0, 175px)) minmax(0px, 1fr);
-grid-area:rgba (255,255,255,0.3);
-grid-rows:minmax(0px, 1fr) repeat(3, minmax(0, 175px)) minmax(0px, 1fr);}
-nav{
-    grid-area:1/2/2/-2;
-    background-color: #424242;
+body{
+    display: grid; 
+    grid-template-columns: repeat(9,1fr);
+    grid-template-rows: repeat(10,200px);
+    background-attachment:fixed;
 }
-main{
-    grid-area:2/-2/4/-2;
-    background-color:
-}
+
 .grid-item1{
-     grid-area:2/-2/4/-2;
-    background-color: purple;
+    grid-column-start:2;
+    grid-row-start:2;
+    grid-column-end:4;
+    grid-row-end:5;
+    background:navy;
 }
