@@ -1,3 +1,34 @@
-display:grid;
-grid-template-columns:minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
-grid-area:rgba (255,255,255,0.3);
+body{
+    display: grid; 
+    grid-template-columns: repeat(9,1fr);
+    grid-template-rows: repeat(10,200px);
+}
+
+.grid-item1{
+    grid-column-start:1;
+    grid-row-start:1;
+    grid-column-end:10;
+    grid-row-end:4;
+    background:navy;
+}
+.grid-item2{
+    grid-column-start:1;
+    grid-row-start:4;
+    grid-column-end:10;
+    grid-row-end:6;
+    background:cyan;
+}
+.grid-item3{
+    grid-column-start:1;
+    grid-row-start:6;
+    grid-column-end:10;
+    grid-row-end:10;
+    background:greenyellow;
+}
+.grid-item4{
+    grid-column-start:1;
+    grid-row-start:10;
+    grid-column-end:10;
+    grid-row-end:11;
+    background:green;
+}
