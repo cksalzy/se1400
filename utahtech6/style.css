@@ -215,3 +215,22 @@ label{
     width:10rem;
     grid-column:2/3;
 }
+table{
+    margin:0 auto;
+    border:1px solid #424242;
+    width:100%;
+    border-collapse: collapse;
+}
+td, th{
+    padding:5px;
+    border:1px solid #424242;
+}
+td{
+    text-align:center;
+}
+.text{
+    text-align:left;
+}
+tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
