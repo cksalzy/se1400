@@ -136,9 +136,6 @@ box-sizing: border-box; }
         display: grid;
         grid-template-columns: 1fr repeat(6, minmax(0, 150px)) 1fr;
     }
-    
-    
-
     main img {
         float: none;
         width: 100%;
@@ -151,6 +148,13 @@ box-sizing: border-box; }
     }
     
 }
+#homehero,
+#studenthero,
+#facultyhero,
+#alumnihero {
+    grid-row: 3/ 4;
+    grid-column: 1 / 9;}
+
 @media only screen and (max-width:900px){
     #homehero,
     #studenthero,
