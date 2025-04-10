@@ -32,3 +32,10 @@ body{
     grid-row-end:11;
     background:green;
 }
+@media only screen and (max-width:992px) {
+    grid-column-width:768px;
+    
+}
+@media only screen and (max-width:768px) {
+    grid-column-width:100%;
+}
