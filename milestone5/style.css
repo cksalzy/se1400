@@ -10,6 +10,7 @@ body{
     grid-column-end:10;
     grid-row-end:4;
     background:navy;
+    color:#ffffff;
 }
 .grid-item2{
     grid-column-start:1;
