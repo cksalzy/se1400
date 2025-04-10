@@ -40,3 +40,7 @@ body{
 @media only screen and (max-width:768px) {
     grid-column-width:100%;
 }
+.flex-container{
+    display:flex;
+    flex-direction:row;
+}
