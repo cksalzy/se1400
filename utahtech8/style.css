@@ -120,6 +120,13 @@ main img{
     background-repeat: no-repeat;
     background-position:center;
 }
+#shophero{
+    height:300px;
+    background-image:url(utahtechimages/shophero.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:center;
+}
 *{ 
 box-sizing: border-box; }
 #bluebar {
@@ -152,7 +159,8 @@ box-sizing: border-box; }
 #homehero,
 #studenthero,
 #facultyhero,
-#alumnihero {
+#alumnihero,
+#shophero {
     grid-row: 3/ 4;
     grid-column: 1 / 9;}
 
@@ -160,7 +168,8 @@ box-sizing: border-box; }
     #homehero,
     #studenthero,
     #facultyhero,
-    #alumnihero {
+    #alumnihero,
+    #shophero {
         grid-row: 2 / 3;
         grid-column: 5 / 8;
         height: auto;
@@ -185,7 +194,8 @@ box-sizing: border-box; }
     #homehero,
     #studenthero,
     #facultyhero,
-    #alumnihero{
+    #alumnihero,
+    #shophero{
         display:none;
     }
     nav {
