@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script> 
+    function validateForm() {
+         if (document.forms[0].myEmail.value == "" ) {
+              alert("Please enter an e-mail address.");
+              return false;
+         } // end if
+         return true;
+    } // end function validateForm
+    </script>
 <title>Utah Tech University</title>
   <meta charset="utf-8">
   <meta name="robots" content="noindex, nofollow">
@@ -29,7 +38,7 @@
     <h2>Join Alumni Mailing List</h2>
     <h3>Request Alumni Newsletter</h3>
     <p>Required information is required with an asterisk (*).</p>
-    <form method="post" action="https://kearl.net/se1400/mail.php">
+    <form method="post" onsubmit="return validateForm();" action="https://kearl.net/se1400/mail.php">
         <label for="myFName">*First Name:</label>
         <input type="text" id="myFName" name="myFName">
         <label for="myLName">*Last Name:</label>
