@@ -189,6 +189,9 @@ box-sizing: border-box; }
         width:100%;
         height:auto;
     }
+    #shoppingcart img{
+        grid-column:2;
+    }
 }
 @media only screen and (max-width: 600px) {
     #homehero,
@@ -204,6 +207,9 @@ box-sizing: border-box; }
     header h1{
         background-image: none;
         text-align:center;
+    }
+    #shoppingcart img{
+        grid-column:1;
     }
 }
 form {
@@ -254,4 +260,10 @@ tr:nth-of-type(even) {
 video{
     float:right;
     margin-left:2em;
+}
+#shoppingcart img{
+    width:100%;
+    height:auto;
+    display:grid;
+    grid-column:3;
 }
