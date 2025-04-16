@@ -1,7 +1,7 @@
 body{
     display: grid; 
-    grid-template-columns: repeat(9,1fr);
-    grid-template-rows: repeat(10,200px);
+    grid-template-columns:20fr 20fr 20fr 20fr;
+    grid-template-rows:repeat(100,100px);
 }
 
 .grid-item1{
@@ -10,6 +10,7 @@ body{
     grid-column-end:10;
     grid-row-end:4;
     background:navy;
+    color:#ffffff;
 }
 .grid-item2{
     grid-column-start:1;
@@ -31,4 +32,15 @@ body{
     grid-column-end:10;
     grid-row-end:11;
     background:green;
+}
+@media only screen and (max-width:900px) {
+    grid-column-width:768px;
+    
+}
+@media only screen and (max-width:600px) {
+    grid-column-width:100%;
+}
+.flex-container{
+    display:flex;
+    flex-direction:row;
 }

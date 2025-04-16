@@ -33,11 +33,11 @@ body{
     grid-row-end:11;
     background:green;
 }
-@media only screen and (max-width:992px) {
+@media only screen and (max-width:900px) {
     grid-column-width:768px;
     
 }
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:600px) {
     grid-column-width:100%;
 }
 .flex-container{
