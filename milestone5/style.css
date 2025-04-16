@@ -2,7 +2,6 @@ body{
     display: grid; 
     grid-template-columns:20fr 20fr 20fr 20fr;
     grid-template-rows:repeat(100,100px);
-}
 
 .grid-item1{
     grid-column-start:1;
@@ -43,4 +42,5 @@ body{
 .flex-container{
     display:flex;
     flex-direction:row;
+}
 }

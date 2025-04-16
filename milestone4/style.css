@@ -1,7 +1,6 @@
 body{
     display: grid; 
-    grid-template-columns:200px 1fr 1fr 1fr 1fr 200px;
-    grid-template-rows:repeat(100px);
+    background-color: rgb(255, 219, 172);
 }
 
 .grid-item1{
@@ -30,4 +29,9 @@ body{
 .flex-container{
     display:flex;
     flex-direction:row;
+}
+#wrapper{
+    grid-template-columns:200px 1fr 1fr 1fr 1fr 200px;
+    display: grid; 
+    grid-auto-rows:minmax(0px, auto);
 }
