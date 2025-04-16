@@ -31,7 +31,13 @@ body{
     flex-direction:row;
 }
 #wrapper{
-    grid-template-columns:200px 1fr 1fr 1fr 1fr 200px;
+    grid-template-columns:200px 200px 200px 50px;
     display: grid; 
     grid-auto-rows:minmax(0px, auto);
+}
+header{
+    grid-row:1/2;
+}
+nav{
+    grid-row:2/3;
 }
