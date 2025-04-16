@@ -1,7 +1,7 @@
 body{
     display: grid; 
-    grid-template-columns:20fr 20fr 20fr 20fr;
-    grid-template-rows:repeat(100,100px);
+    grid-template-columns:100fr 100fr 100fr 100fr;
+    grid-template-rows:repeat(100px);
 }
 
 .grid-item1{
