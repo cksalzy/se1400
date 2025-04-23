@@ -1,58 +1,47 @@
 body {
     background-color: rgb(255, 219, 172);
-    margin: 0;
     font-family: sans-serif;
+    margin: 0;
+    padding: 0;
   }
   
-  #wrapper {
-    display: grid;
-    grid-template-columns: 50px 1fr 1fr 1fr 1fr 50px;
-    grid-template-rows: auto auto 1fr auto;
-    gap: 10px;
-    padding: 10px;
+  .container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
   }
   
-  header {
-    grid-column: 2 / 6;
-    background: #333;
-    color: white;
+  header h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 30px;
+  }
+  
+  .ingredients, .process {
+    flex: 1 1 45%;
+    background: white;
     padding: 20px;
-    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   }
   
-  nav {
-    grid-column: 2 / 6;
-    background: #555;
-    color: white;
-    padding: 15px;
-    text-align: center;
+  h2 {
+    color: #444;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
   }
   
-  main {
-    grid-column: 2 / 6;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+  ul {
+    padding-left: 20px;
   }
   
-  .grid-item1,
-  .grid-item2,
-  .grid-item3,
-  .grid-item4 {
-    padding: 20px;
-    text-align: center;
-    color: white;
-  }
-  
-  .grid-item1 { background: navy; }
-  .grid-item2 { background: cyan; color: black; }
-  .grid-item3 { background: greenyellow; color: black; }
-  .grid-item4 { background: green; }
-  
-  footer {
-    grid-column: 2 / 6;
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 15px;
+  li {
+    margin-bottom: 10px;
   }
