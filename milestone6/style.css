@@ -1,0 +1,47 @@
+body {
+    background-color: rgb(255, 219, 172);
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+  }
+  
+  header h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 30px;
+  }
+  
+  .ingredients, .process {
+    flex: 1 1 45%;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  h2 {
+    color: #444;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+  }
+  
+  ul {
+    padding-left: 20px;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
