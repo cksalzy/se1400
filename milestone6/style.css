@@ -23,7 +23,7 @@ body {
     margin-top: 30px;
   }
   
-  .ingredients, .process {
+  .ingredients, .recipes,.process {
     flex: 1 1 45%;
     background: white;
     padding: 20px;
