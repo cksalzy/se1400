@@ -23,14 +23,20 @@ body {
     margin-top: 30px;
   }
   
-  .ingredients, .recipes, .process {
+  .ingredients, .process {
     flex: 1 1 45%;
     background: white;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 8px 17px black;
   }
-  
+  .recipes{
+    flex: 1 1 45%;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 8px 17px black;
+  }
   h2 {
     color: #444;
     border-bottom: 2px solid #ccc;
