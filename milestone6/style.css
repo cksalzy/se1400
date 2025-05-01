@@ -18,7 +18,7 @@ body {
   header h1 {
     text-align: center;
     color: #ffffff;
-    text:bold; 
+    font-style:bold;
   }
   
   .content {
